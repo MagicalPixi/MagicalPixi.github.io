@@ -1,0 +1,17 @@
+html, body {
+    padding: 0px;
+    height: 100%;
+    font-family: "HiraginoSansGB-W3", "Microsoft Yahei", sans-serif;
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    transition: color linear 0.25s
+}
+
+a:focus, a:active, a:visited, a:hover {
+    outline: none
+}
