@@ -16,6 +16,7 @@ header{
 }
 
 .top-title{
+    color: #ffffff;
     font-family: 'art-title';
     float: left;
 }
@@ -36,7 +37,8 @@ header{
     overflow: hidden;
 }
 .game-container{
-    background-color:#3CA9FF;
+    background-color: #000;
+//    background-color:#3CA9FF;
 
 //    background-image:-webkit-linear-gradient(to top,#AFE6FF,#3CA9FF);
 //    background-image:linear-gradient(to top, #ffffff,#3CA9FF);
@@ -49,12 +51,12 @@ header{
 
     .cloud1{
         position: absolute;
-        top: 8%;
-        left: 20%;
+        left: 45%;
+        bottom: 80px;
     }
     .cloud2{
         position: absolute;
-        top: 30%;
+        top: 5%;
         left: 66%;
     }
     .ground{
