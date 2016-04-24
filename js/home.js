@@ -126,7 +126,9 @@ window.onload = function() {
 function init() {
     width = 800;
     height = 400;
-    renderer = PIXI.autoDetectRenderer(800, 400, {backgroundColor: 0x1099bb});
+    renderer = PIXI.autoDetectRenderer(800, 400, {
+        transparent:true
+    });
     document.getElementById("playContainer").appendChild(renderer.view);
     // create the root of the scene graph
     stage = new PIXI.Container();

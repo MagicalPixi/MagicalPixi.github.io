@@ -1,0 +1,27 @@
+doctype
+html
+    head
+        title MagicalPixi
+
+    link(rel="styleSheet" href="/css/index.css")
+
+body
+    header
+        h1.top-title
+            img(src="/images/mp_logo.png")
+            span MagicalPixi
+
+    div.game-container-box
+        div.game-container
+            div.background
+                img.cloud1(src="/images/cloud1.png")
+                img.cloud2(src="/images/cloud2.png")
+                div.ground
+
+
+            div#playContainer.playContainer
+
+
+script(src="/js/pixi.min.js")
+script(src="/js/pixi-lib.js")
+script(src="dist/game.js")
