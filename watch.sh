@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-cd ./css/
+cd ./css/jade index.jade -w
 scss --watch index.scss
 
 cd ..
-jade index.jade -w

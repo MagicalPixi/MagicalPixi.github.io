@@ -33,7 +33,7 @@ header {
   overflow: hidden; }
 
 .game-container {
-  background-color: #000;
+  background-color: #88C6FB;
   width: 100%;
   position: absolute;
   top: 0;
@@ -46,6 +46,15 @@ header {
     position: absolute;
     top: 5%;
     left: 66%; }
+  .game-container .mountain {
+    position: absolute;
+    bottom: 90px;
+    left: 0; }
+  .game-container .mountain2 {
+    width: 400px;
+    position: absolute;
+    bottom: 90px;
+    right: 10%; }
   .game-container .ground {
     background-image: url(/images/ground.png);
     width: 100%;

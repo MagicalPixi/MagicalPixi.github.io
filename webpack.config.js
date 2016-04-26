@@ -6,10 +6,11 @@ module.exports = {
   externals:{
     'pixi-lib':'pixiLib',
     pixi:'Pixi',
+    PIXI:'PIXI',
   },
   output:{
     path: path.resolve(__dirname, './dist/'),
     publicPath: 'dist',
-    filename: '[name].js'
+    filename: 'game.js'
   }
 };

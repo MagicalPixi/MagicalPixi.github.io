@@ -37,8 +37,8 @@ header{
     overflow: hidden;
 }
 .game-container{
-    background-color: #000;
 //    background-color:#3CA9FF;
+    background-color: #88C6FB;
 
 //    background-image:-webkit-linear-gradient(to top,#AFE6FF,#3CA9FF);
 //    background-image:linear-gradient(to top, #ffffff,#3CA9FF);
@@ -59,6 +59,20 @@ header{
         top: 5%;
         left: 66%;
     }
+    .mountain{
+        position: absolute;
+        bottom: 90px;
+
+        left: 0;
+    }
+    .mountain2{
+        width: 400px;
+        position: absolute;
+        bottom: 90px;
+
+        right: 10%;
+    }
+
     .ground{
         background-image: url(/images/ground.png);
         width: 100%;
@@ -66,7 +80,6 @@ header{
         position: absolute;
         bottom: 0;
     }
-
     #playContainer{
         position: absolute;
         width: 100%;
