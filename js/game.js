@@ -10,3 +10,20 @@ var render = pixiLib.createRender(gameContainer,{
   w:800,
   h:600,
 });
+
+var loader = pixiLib.createLoader({
+  publicPath:'/sprites/'
+});
+
+loader.add(['dragon']).load(function () {
+
+  var stage = new PIXI.Container();
+
+  var dragon = require('../sprites/dragon');
+
+  dragon.play();
+
+  stage.addChild(dragon);
+
+  render(stage);
+});
