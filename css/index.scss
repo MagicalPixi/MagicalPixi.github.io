@@ -1,93 +1,104 @@
-body,h1{
-    padding: 0;
-    margin: 0;
+body, h1 {
+  padding: 0;
+  margin: 0;
 }
+
 @font-face {
-    font-family: "art-title";
-    src:url('../fonts/artTitle.ttf') format('truetype'),
-    url('/fonts/artTitle.otf') format('opentype');
+  font-family: "art-title";
+  src: url('../fonts/artTitle.ttf') format('truetype'),
+  url('/fonts/artTitle.otf') format('opentype');
 }
 
-header{
-    padding: 20px 20px 0 20px;
-    height: 50px;
-    position: relative;
-    z-index: 1;
+header {
+  padding: 20px 20px 0 20px;
+  height: 50px;
+  position: relative;
+  z-index: 1;
 }
 
-.top-title{
-    color: #000000;
-    font-family: 'art-title';
-    float: left;
+.top-title {
+  color: #000000;
+  font-family: 'art-title';
+  float: left;
 }
-.top-title > *{
-    vertical-align: middle;
+
+.top-title > * {
+  vertical-align: middle;
 }
-.top-title > img{
-    margin-right: 10px;
-    height: 50px;
+
+.top-title > img {
+  margin-right: 10px;
+  height: 50px;
 }
-.game-container-box{
-    background-color: #333;
-    width: 100%;
+
+.game-container-box {
+  background-color: #333;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+
+.game-container {
+  //    background-color:#3CA9FF;
+  background-color: #88C6FB;
+
+  //    background-image:-webkit-linear-gradient(to top,#AFE6FF,#3CA9FF);
+  //    background-image:linear-gradient(to top, #ffffff,#3CA9FF);
+
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  bottom: 40px;
+
+  .cloud1 {
     position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left:  0px;
-    overflow: hidden;
-}
-.game-container{
-//    background-color:#3CA9FF;
-    background-color: #88C6FB;
-
-//    background-image:-webkit-linear-gradient(to top,#AFE6FF,#3CA9FF);
-//    background-image:linear-gradient(to top, #ffffff,#3CA9FF);
-
-    width: 100%;
-
+    left: 45%;
+    bottom: 80px;
+  }
+  .cloud2 {
     position: absolute;
-    top: 0;
-    bottom: 40px;
+    top: 5%;
+    left: 66%;
+  }
+  .mountain {
+    position: absolute;
+    bottom: 90px;
 
-    .cloud1{
-        position: absolute;
-        left: 45%;
-        bottom: 80px;
-    }
-    .cloud2{
-        position: absolute;
-        top: 5%;
-        left: 66%;
-    }
-    .mountain{
-        position: absolute;
-        bottom: 90px;
+    left: 0;
+  }
+  .mountain2 {
+    width: 400px;
+    position: absolute;
+    bottom: 90px;
 
-        left: 0;
-    }
-    .mountain2{
-        width: 400px;
-        position: absolute;
-        bottom: 90px;
+    right: 10%;
+  }
 
-        right: 10%;
-    }
+  .ground {
+    background-image: url(/images/ground.png);
+    width: 100%;
+    height: 123px;
+    position: absolute;
+    bottom: 0;
+  }
+  #playContainer {
+    position: absolute;
+    top:80px;
+    width: 100%;
+    bottom: 86px;
 
-    .ground{
-        background-image: url(/images/ground.png);
-        width: 100%;
-        height: 123px;
-        position: absolute;
-        bottom: 0;
+    > canvas {
+
+      width: 100%;
+      height: 400px;
+
+      position: absolute;
+      left: 0;
+      bottom: 0;
     }
-    #playContainer{
-        position: absolute;
-        width: 100%;
-        top: 70px;
-        bottom:86px;
-        > canvas{
-            width: 100%;
-            height: 100%;
-        }
-    }
+  }
 }
