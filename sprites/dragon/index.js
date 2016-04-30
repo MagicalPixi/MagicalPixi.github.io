@@ -3,8 +3,9 @@ var mySprite = mySpriteFn();
 
 mySprite.scale.x = 0.1;
 mySprite.scale.y = 0.1;
+mySprite.anchor.x = 1;
 mySprite.anchor.y = 1;
-mySprite.x = maxW/5;
+mySprite.x = maxW/4;
 mySprite.y = maxH;
 
 function createJumpFn(){
@@ -38,8 +39,10 @@ mySprite.render = function () {
 };
 
 mySprite.jump = function () {
-  this.jumping = true;
-  this.getJumpHeight = createJumpFn();
+  if(!this.jumping){
+    this.getJumpHeight = createJumpFn();
+    this.jumping = true;
+  }
 };
 
 module.exports = mySprite;

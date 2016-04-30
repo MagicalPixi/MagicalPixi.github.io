@@ -8,12 +8,29 @@ html
 body
     header
         h1.top-title
-            img(src="/images/mashroom_logo.png")
+            img.w(src="/images/mashroom_logo.png")
+            img.b(src="/images/mashroom_logo_b.png")
             span MagicalPixi
 
+        nav.top
+            ul
+                li 首页游戏
+                li About Us
+
     div.game-container-box
+
+        div.replay-game
+
+        div.play-game-button 体验游戏
+
         div.game-container
             div.background
+                img.mountain(src="/images/mountain.png")
+                img.mountain2(src="/images/mountain.png")
+                img.cloud1(src="/images/cloud1.png")
+                img.cloud2(src="/images/cloud2.png")
+                div.ground
+            div.background2
                 img.mountain(src="/images/mountain.png")
                 img.mountain2(src="/images/mountain.png")
                 img.cloud1(src="/images/cloud1.png")
@@ -22,7 +39,9 @@ body
 
 
             div#playContainer.playContainer
+                div.game-score 分数:0
 
 script(src="/js/pixi.min.js")
 script(src="/js/pixi-lib.js")
-script(src="dist/game.js")
+script(src="dist/dist.js")
+

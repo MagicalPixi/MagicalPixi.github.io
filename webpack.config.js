@@ -2,7 +2,7 @@ var path = require('path');
 
 
 module.exports = {
-  entry:'./js/game.js',
+  entry:'./js/index.js',
   externals:{
     'pixi-lib':'pixiLib',
     pixi:'Pixi',
@@ -11,6 +11,6 @@ module.exports = {
   output:{
     path: path.resolve(__dirname, './dist/'),
     publicPath: 'dist',
-    filename: 'game.js'
+    filename: 'dist.js'
   }
 };
