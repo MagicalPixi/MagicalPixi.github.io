@@ -49,7 +49,7 @@ function createRect(){
 
   graphics.render = function () {
     this.x -= 10;
-    if(!this.scored && this.x < maxH/4){
+    if(isPlaying && !this.scored && this.x < maxH/4){
       onScore();
       this.scored = true;
     }

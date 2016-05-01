@@ -31,7 +31,7 @@ body[play-game="playing"]{
   }
 
   .game-container{
-    .game-score{
+    .game-score,.game-score-max{
       display: block;
     }
   }
@@ -212,18 +212,26 @@ nav.top{
     width: 100%;
     bottom: 86px;
 
-    .game-score{
+    .game-score,.game-score-max{
       color: #000000;
       font-size: 30px;
 
       z-index: 1;
 
-      display: none;
-
-
       position: absolute;
       top:30px;
       left: 30px;
+    }
+    .game-score{
+      &:before{
+        content:'分数:';
+      }
+    }
+    .game-score-max{
+      &:before{
+        content: '最佳:';
+      }
+      top:70px;
     }
 
     > canvas {

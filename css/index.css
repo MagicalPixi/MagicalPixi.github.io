@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body, h1, ul, li {
   padding: 0;
   margin: 0; }
@@ -15,7 +16,7 @@ body[play-game="playing"] nav ul li {
   color: #000; }
 body[play-game="playing"] .game-container-box:before {
   display: none; }
-body[play-game="playing"] .game-container .game-score {
+body[play-game="playing"] .game-container .game-score, body[play-game="playing"] .game-container .game-score-max {
   display: block; }
 body[play-game="playing"] .play-game-button {
   display: none; }
@@ -137,14 +138,19 @@ nav.top {
     top: 80px;
     width: 100%;
     bottom: 86px; }
-    .game-container .playContainer .game-score {
+    .game-container .playContainer .game-score, .game-container .playContainer .game-score-max {
       color: #000000;
       font-size: 30px;
       z-index: 1;
-      display: none;
       position: absolute;
       top: 30px;
       left: 30px; }
+    .game-container .playContainer .game-score:before {
+      content: '分数:'; }
+    .game-container .playContainer .game-score-max {
+      top: 70px; }
+      .game-container .playContainer .game-score-max:before {
+        content: '最佳:'; }
     .game-container .playContainer > canvas {
       width: 100%;
       height: 400px;
