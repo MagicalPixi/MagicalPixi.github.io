@@ -142,6 +142,7 @@ nav.top {
       color: #000000;
       font-size: 30px;
       z-index: 1;
+      display: none;
       position: absolute;
       top: 30px;
       left: 30px; }
