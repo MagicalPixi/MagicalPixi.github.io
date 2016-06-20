@@ -1,3 +1,5 @@
+require('../css/index.scss')
+
 var gameFn = require('./game');
 game = gameFn();
 

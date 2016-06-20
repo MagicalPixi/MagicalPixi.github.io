@@ -12,5 +12,15 @@ module.exports = {
     path: path.resolve(__dirname, './dist/'),
     publicPath: 'dist',
     filename: 'dist.js'
-  }
+  },
+  module:{
+    loaders:[{
+      test:/\.less$/,
+      loaders:['style','css','less']
+    },{
+      test:/\.scss$/,
+      loaders:['style','css','sass']
+    }]
+  },
+  devTools:'source-map'
 };
