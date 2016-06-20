@@ -4,7 +4,6 @@ var path = require('path');
 module.exports = {
   entry:'./js/index.js',
   externals:{
-    'pixi-lib':'pixiLib',
     pixi:'Pixi',
     PIXI:'PIXI',
   },

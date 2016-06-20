@@ -1,0 +1,93 @@
+body, h1, ul, li {
+  padding: 0;
+  margin: 0;
+}
+
+@navHeight: 30px;
+@themeColor: #04BE02;
+@topNav: 80px;
+@navPadding: 5px;
+
+body {
+  font-family: Microsoft YaHei;
+}
+
+li {
+  list-style: none;
+}
+
+@font-face {
+  font-family: 'title';
+  src: url(/fonts/artTitle.ttf)
+}
+
+#wrapper {
+
+}
+
+header.top {
+
+  height: @navHeight;
+
+  position: relative;
+
+  h1 {
+    padding: @navPadding;
+    height: 100%;
+
+    color: #333;
+
+    font-size: 18px;
+
+    font-family: 'title';
+
+    float: left;
+
+    img {
+      height: 30px;
+      vertical-align: middle;
+      display: inline-block;
+    }
+
+    span {
+      height: @navHeight;
+      line-height: @navHeight + @navPadding;
+      vertical-align: middle;
+      display: inline-block;
+    }
+
+  }
+
+  nav {
+    background-color: #000;
+
+    padding: @navPadding;
+    width: @navHeight + @navPadding * 2;
+    height: 100%;
+
+    float: right;
+
+    ul {
+      background-color: #f0f0f0;
+      width: 100%;
+
+      font-size: 16px;
+
+      color: #333;
+
+      position: absolute;
+      top: @navHeight + @navPadding * 2;
+      left: 0;
+
+      li{
+        padding: @navPadding;
+      }
+    }
+  }
+}
+
+.content{
+
+  width:100%;
+
+}

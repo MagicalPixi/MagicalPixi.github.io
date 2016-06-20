@@ -1,0 +1,37 @@
+body, h1, ul, li {
+  padding: 0;
+  margin: 0;
+}
+
+@navHeight: 30px;
+@themeColor: #04BE02;
+@topNav: 80px;
+@navPadding: 5px;
+
+@media screen and (min-width: 600px) {
+
+  #wrapper {
+
+    display: flex;
+
+    h1{
+      box-sizing: border-box;
+      width: 100%;
+
+      span{
+        float: right;
+      }
+    }
+
+    nav {
+
+      background: none;
+
+      li{
+        margin: 30px 0;
+        padding:0;
+        text-align: center;
+      }
+    }
+  }
+}
