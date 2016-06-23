@@ -111,11 +111,32 @@ header.top {
         position: absolute;
         top:0;
         left:0;
+
+        cursor: pointer;
+
+        img{
+          width: 70%;
+          position: absolute;
+          top:50%;
+          left:50%;
+
+          transform: translate(-50%,-50%);
+          display: none;
+        }
       }
+
+
     }
+
     li:nth-child(2n+1){
       .box{
         background-color: grey;
+      }
+    }
+
+    li:hover{
+      img{
+        display: block;
       }
     }
   }
