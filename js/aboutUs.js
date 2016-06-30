@@ -1,6 +1,6 @@
 require('../css/nav.less')
-require('../css/index.less').
-require('../css/index.pc.less')
+require('../css/about-us.less')
+
 
 var pixiLib = require('pixi-lib')
 

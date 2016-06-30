@@ -2,7 +2,10 @@ var path = require('path');
 
 
 module.exports = {
-  entry:'./js/index.js',
+  entry:{
+    index:'./js/index.js',
+    aboutUs:'./js/aboutUs.js'
+  },
   externals:{
     pixi:'Pixi',
     PIXI:'PIXI',
@@ -10,7 +13,7 @@ module.exports = {
   output:{
     path: path.resolve(__dirname, './dist/'),
     publicPath: 'dist',
-    filename: 'dist.js'
+    filename: '[name].js'
   },
   module:{
     loaders:[{
