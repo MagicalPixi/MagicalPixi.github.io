@@ -20,6 +20,7 @@
   "homepage": "https://github.com/MagicalPixi/MagicalPixi.github.io#readme",
   "dependencies": {
     "css-loader": "^0.23.1",
+    "less": "^2.7.1",
     "less-loader": "^2.2.3",
     "pixi-lib": "^1.16.3",
     "style-loader": "^0.13.1"
