@@ -92,10 +92,9 @@ header.top {
 
       li{
         background-color: #fff;
-        padding: 0 @navPadding * 2;
-        line-height:2;
-
+        padding:0;
         height:0;
+        line-height:1;
 
         overflow: hidden;
 
@@ -104,7 +103,9 @@ header.top {
         z-index:10;
 
         a{
+          box-sizing: border-box;
           width: 100%;
+          padding:0 @navPadding * 2;
           color: inherit;
           text-decoration: none;
           display: inline-block;
@@ -149,6 +150,7 @@ body, h1, ul, li {
         box-sizing: border-box;
         margin:0;
         width: 100%;
+        font-size: 24px;
 
         span {
           float: left;
@@ -167,11 +169,18 @@ body, h1, ul, li {
         }
 
         li {
-          margin: 30px 0;
+          margin: 20px 0;
           padding: 0;
           height: 1.5em;
           line-height: 1.5em;
           text-align: left;
+
+          > a{
+            padding:0;
+          }
+        }
+        li:first-child{
+          margin-top:40px;
         }
       }
     }
