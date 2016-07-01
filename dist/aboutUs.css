@@ -206,6 +206,17 @@ li {
   margin-top: 10px;
   font-size: 12px;
 }
+.content > section .contact-us {
+  margin: 10px;
+}
+.content > section .contact-us .line {
+  height: 25px;
+  line-height: 25px;
+}
+.content > section .contact-us .line .pre-icon {
+  width: 25px;
+  vertical-align: middle;
+}
 @media screen and (min-width: 600px) {
   #wrapper .content > section .description {
     margin-top: 20px;

@@ -11,6 +11,9 @@ basic = Object.assign(basic, {
     loaders: [{
       test: /\.less$/,
       loader: ExtractTextPlugin.extract("style", "css!less"),
+    },{
+      test: /\.css$/,
+      loaders: ['style', 'css']
     }]
   },
 

@@ -1,3 +1,4 @@
+require('weui/dist/style/weui.min.css')
 require('../css/nav.less')
 require('../css/index.less')
 require('../css/index.pc.less')
