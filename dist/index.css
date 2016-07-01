@@ -64,16 +64,20 @@ header.top nav ul {
 }
 header.top nav ul li {
   background-color: #fff;
-  padding: 0 10px;
-  line-height: 2;
+  padding: 0;
   height: 0;
+  line-height: 1;
   overflow: hidden;
   transition: all 0.3s;
   z-index: 10;
 }
 header.top nav ul li a {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 10px;
   color: inherit;
   text-decoration: none;
+  display: inline-block;
 }
 header.top nav ul.show li {
   height: 2em;
@@ -103,6 +107,7 @@ li {
     box-sizing: border-box;
     margin: 0;
     width: 100%;
+    font-size: 24px;
   }
   #wrapper header.top h1 span {
     float: left;
@@ -118,11 +123,17 @@ li {
     right: 30px;
   }
   #wrapper header.top nav li {
-    margin: 30px 0;
+    margin: 20px 0;
     padding: 0;
     height: 1.5em;
     line-height: 1.5em;
     text-align: left;
+  }
+  #wrapper header.top nav li > a {
+    padding: 0;
+  }
+  #wrapper header.top nav li:first-child {
+    margin-top: 40px;
   }
 }
 .content {
