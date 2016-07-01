@@ -7,7 +7,7 @@ h2,h3,p{
   margin:0;
 }
 
-@navHeight: 30px;
+@navHeight: 50px;
 @themeColor: #04BE02;
 @topNav: 80px;
 @navPadding: 5px;
@@ -38,7 +38,7 @@ header.top {
   z-index: 10;
 
   h1 {
-    padding: @navPadding;
+    margin: @navPadding 0 0 @navPadding *2;
     height: 100%;
 
     color: #333;
@@ -69,13 +69,15 @@ header.top {
     background-size:100% 100%;
     background-repeat:no-repeat;
 
+    margin:@navHeight * 0.2 +  @navPadding * 0.5;
     //    padding: @navPadding;
-    width: @navHeight + @navPadding * 2;
-    height: 100%;
-
+    width: @navHeight * 0.6;
+    height: @navHeight * 0.6;
 
 
     float: right;
+
+    display: inline-block;
 
     ul {
       width: 100%;
@@ -120,11 +122,6 @@ body, h1, ul, li {
   margin: 0;
 }
 
-@navHeight: 30px;
-@themeColor: #04BE02;
-@topNav: 80px;
-@navPadding: 5px;
-
 @media screen and (min-width: 600px) {
 
   #wrapper {
@@ -148,7 +145,7 @@ body, h1, ul, li {
 
       h1 {
         box-sizing: border-box;
-        padding:0;
+        margin:0;
         width: 100%;
 
         span {
