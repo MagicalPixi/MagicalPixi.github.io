@@ -416,128 +416,23 @@
 /***/ },
 
 /***/ 5:
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(6);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/less-loader/index.js!./nav.less", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/less-loader/index.js!./nav.less");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-
-/***/ 6:
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(3)();
-	// imports
-
-
-	// module
-	exports.push([module.id, "body,\nh1,\nul,\nli {\n  padding: 0;\n  margin: 0;\n}\nh2,\nh3,\np {\n  margin: 0;\n}\nbody {\n  font-family: Microsoft YaHei;\n}\nli {\n  list-style: none;\n}\n@font-face {\n  font-family: 'title';\n  src: url(/fonts/artTitle.ttf);\n}\nheader.top {\n  height: 60px;\n  position: relative;\n  z-index: 10;\n}\nheader.top h1 {\n  margin: 5px 0 0 10px;\n  height: 100%;\n  color: #333;\n  font-size: 18px;\n  font-family: 'title';\n  float: left;\n}\nheader.top h1 img {\n  height: 30px;\n  vertical-align: middle;\n  display: inline-block;\n}\nheader.top h1 span {\n  height: 50px;\n  line-height: 55px;\n  vertical-align: middle;\n  display: inline-block;\n}\nheader.top nav {\n  background-image: url(/images/list-icon.png);\n  background-size: 100% 100%;\n  background-repeat: no-repeat;\n  margin: 12.5px;\n  width: 30px;\n  height: 30px;\n  float: right;\n  display: inline-block;\n}\nheader.top nav ul {\n  width: 100%;\n  font-size: 16px;\n  color: #333;\n  position: absolute;\n  top: 60px;\n  left: 0;\n}\nheader.top nav ul li {\n  background-color: #fff;\n  padding: 0;\n  height: 0;\n  line-height: 1;\n  overflow: hidden;\n  transition: all 0.3s;\n  z-index: 10;\n}\nheader.top nav ul li a {\n  box-sizing: border-box;\n  width: 100%;\n  padding: 0 10px;\n  color: inherit;\n  text-decoration: none;\n  display: inline-block;\n}\nheader.top nav ul.show li {\n  height: 2em;\n}\nbody,\nh1,\nul,\nli {\n  padding: 0;\n  margin: 0;\n}\n@media screen and (min-width: 600px) {\n  #wrapper {\n    display: flex;\n  }\n  #wrapper header.top {\n    padding: 30px;\n    height: auto;\n  }\n  #wrapper header.top .b {\n    display: none;\n  }\n  #wrapper header.top .title {\n    float: left;\n  }\n  #wrapper header.top h1 {\n    box-sizing: border-box;\n    margin: 0;\n    width: 100%;\n    font-size: 24px;\n  }\n  #wrapper header.top h1 span {\n    float: left;\n  }\n  #wrapper header.top nav {\n    background: none;\n    height: 0;\n  }\n  #wrapper header.top nav ul {\n    width: auto;\n    top: 60px;\n    left: 30px;\n    right: 30px;\n  }\n  #wrapper header.top nav li {\n    margin: 20px 0;\n    padding: 0;\n    height: 1.5em;\n    line-height: 1.5em;\n    text-align: left;\n  }\n  #wrapper header.top nav li > a {\n    padding: 0;\n  }\n  #wrapper header.top nav li:first-child {\n    margin-top: 40px;\n  }\n}\n", ""]);
-
-	// exports
-
+	// removed by extract-text-webpack-plugin
 
 /***/ },
 
 /***/ 223:
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(224);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/less-loader/index.js!./join.less", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/less-loader/index.js!./join.less");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-
-/***/ 224:
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(3)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".content {\n  display: flex;\n  display: -webkit-flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n  width: 100%;\n}\n.content div {\n  margin: 5px;\n}\n.content .want {\n  width: 100%;\n}\n.content .want img {\n  width: 100%;\n}\n.content .want .want_content {\n  width: 100%;\n}\n.content .want .want_content .want_title {\n  font-size: 20px;\n}\n", ""]);
-
-	// exports
-
+	// removed by extract-text-webpack-plugin
 
 /***/ },
 
 /***/ 225:
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(226);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/less-loader/index.js!./join.pc.less", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/less-loader/index.js!./join.pc.less");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-
-/***/ 226:
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(3)();
-	// imports
-
-
-	// module
-	exports.push([module.id, "body,\nh1,\nul,\nli {\n  padding: 0;\n  margin: 0;\n}\n@media screen and (min-width: 700px) {\n  .content {\n    display: flex;\n    display: -webkit-flex;\n    flex-direction: row;\n    flex-wrap: wrap;\n    width: 100%;\n  }\n  .content div {\n    margin: 5px;\n  }\n  .content .want {\n    width: 48%;\n  }\n  .content .want img {\n    width: 100%;\n  }\n}\n", ""]);
-
-	// exports
-
+	// removed by extract-text-webpack-plugin
 
 /***/ }
 
