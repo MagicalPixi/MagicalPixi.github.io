@@ -4,7 +4,8 @@ var path = require('path');
 module.exports = {
   entry: {
     index: './js/index.js',
-    aboutUs: './js/aboutUs.js'
+    aboutUs: './js/aboutUs.js',
+    join: './js/join.js'
   },
   externals: {
     pixi: 'Pixi',
