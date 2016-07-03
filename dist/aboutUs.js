@@ -415,125 +415,26 @@
 
 /***/ },
 /* 5 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(6);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/less-loader/index.js!./nav.less", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/less-loader/index.js!./nav.less");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
+	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 6 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(3)();
-	// imports
-
-
-	// module
-	exports.push([module.id, "body,\nh1,\nul,\nli {\n  padding: 0;\n  margin: 0;\n}\nh2,\nh3,\np {\n  margin: 0;\n}\nbody {\n  font-family: Microsoft YaHei;\n}\nli {\n  list-style: none;\n}\n@font-face {\n  font-family: 'title';\n  src: url(/fonts/artTitle.ttf);\n}\nheader.top {\n  height: 60px;\n  position: relative;\n  z-index: 10;\n}\nheader.top h1 {\n  margin: 5px 0 0 10px;\n  height: 100%;\n  color: #333;\n  font-size: 18px;\n  font-family: 'title';\n  float: left;\n}\nheader.top h1 img {\n  height: 30px;\n  vertical-align: middle;\n  display: inline-block;\n}\nheader.top h1 span {\n  height: 50px;\n  line-height: 55px;\n  vertical-align: middle;\n  display: inline-block;\n}\nheader.top nav {\n  background-image: url(/images/list-icon.png);\n  background-size: 100% 100%;\n  background-repeat: no-repeat;\n  margin: 12.5px;\n  width: 30px;\n  height: 30px;\n  float: right;\n  display: inline-block;\n}\nheader.top nav ul {\n  width: 100%;\n  font-size: 16px;\n  color: #333;\n  position: absolute;\n  top: 60px;\n  left: 0;\n}\nheader.top nav ul li {\n  background-color: #fff;\n  padding: 0;\n  height: 0;\n  line-height: 1;\n  overflow: hidden;\n  transition: all 0.3s;\n  z-index: 10;\n}\nheader.top nav ul li a {\n  box-sizing: border-box;\n  width: 100%;\n  padding: 0 10px;\n  color: inherit;\n  text-decoration: none;\n  display: inline-block;\n}\nheader.top nav ul.show li {\n  height: 2em;\n}\nbody,\nh1,\nul,\nli {\n  padding: 0;\n  margin: 0;\n}\n@media screen and (min-width: 600px) {\n  #wrapper {\n    display: flex;\n  }\n  #wrapper header.top {\n    padding: 30px;\n    height: auto;\n  }\n  #wrapper header.top .b {\n    display: none;\n  }\n  #wrapper header.top .title {\n    float: left;\n  }\n  #wrapper header.top h1 {\n    box-sizing: border-box;\n    margin: 0;\n    width: 100%;\n    font-size: 24px;\n  }\n  #wrapper header.top h1 span {\n    float: left;\n  }\n  #wrapper header.top nav {\n    background: none;\n    height: 0;\n  }\n  #wrapper header.top nav ul {\n    width: auto;\n    top: 60px;\n    left: 30px;\n    right: 30px;\n  }\n  #wrapper header.top nav li {\n    margin: 20px 0;\n    padding: 0;\n    height: 1.5em;\n    line-height: 1.5em;\n    text-align: left;\n  }\n  #wrapper header.top nav li > a {\n    padding: 0;\n  }\n  #wrapper header.top nav li:first-child {\n    margin-top: 40px;\n  }\n}\n", ""]);
-
-	// exports
-
-
-/***/ },
+/* 6 */,
 /* 7 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(8);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/less-loader/index.js!./about-us.less", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/less-loader/index.js!./about-us.less");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
+	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 8 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(3)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".content {\n  flex: 1;\n}\n.content .top-bg {\n  background-image: url(/images/banner-contact.png);\n  background-size: auto 100%;\n  width: 100%;\n  height: 100px;\n}\n.content > img {\n  width: 100%;\n  max-height: 100px;\n}\n.content > section {\n  padding: 15px;\n}\n.content > section h3 i {\n  font-size: 12px;\n}\n.content > section .description {\n  margin: 10px 0;\n}\n.content > section .description:after {\n  content: '';\n  clear: both;\n  display: block;\n}\n.content > section .description li {\n  box-sizing: border-box;\n  width: 25%;\n  height: 100px;\n  text-align: center;\n  float: left;\n  position: relative;\n}\n.content > section .description li > img {\n  width: 80%;\n  position: absolute;\n  top: 35%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n}\n.content > section .description li > p {\n  width: 100%;\n  position: absolute;\n  bottom: 0;\n}\n.content > section .description .sub {\n  width: 12.5%;\n}\n.content > section .description .sub > img {\n  width: 25%;\n}\n.content > section .members > ul {\n  padding: 10px 10px 10px 0;\n}\n.content > section .members > ul li {\n  display: flex;\n}\n.content > section .members > ul li .avatar-box {\n  width: 25%;\n  text-align: center;\n  position: relative;\n}\n.content > section .members > ul li .avatar-box img {\n  width: 80%;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n}\n.content > section .members > ul li .prop {\n  margin: 10px;\n  flex: 1;\n}\n.content > section .members > ul li .prop .desc {\n  margin-top: 10px;\n  font-size: 12px;\n}\n.content > section .contact-us {\n  margin: 10px 20px;\n}\n.content > section .contact-us .line {\n  height: 25px;\n  line-height: 25px;\n}\n.content > section .contact-us .line .pre-icon {\n  width: 25px;\n  vertical-align: middle;\n}\n", ""]);
-
-	// exports
-
-
-/***/ },
+/* 8 */,
 /* 9 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(10);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/less-loader/index.js!./about-us.pc.less", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/less-loader/index.js!./about-us.pc.less");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
+	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 10 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(3)();
-	// imports
-
-
-	// module
-	exports.push([module.id, "@media screen and (min-width: 600px) {\n  #wrapper .content > section .description {\n    margin-top: 20px;\n  }\n  #wrapper .content > section .description li {\n    width: 80px;\n    text-align: center;\n    float: left;\n  }\n  #wrapper .content > section .members > ul {\n    margin-top: 20px;\n    padding: 0;\n  }\n  #wrapper .content > section .members > ul li .avatar-box {\n    width: 100px;\n  }\n}\n", ""]);
-
-	// exports
-
-
-/***/ },
+/* 10 */,
 /* 11 */
 /***/ function(module, exports, __webpack_require__) {
 
