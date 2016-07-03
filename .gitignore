@@ -2,7 +2,6 @@
 node_modules/
 
 .idea/
-dist/
 css/.sass-cache
 *.swp
 
