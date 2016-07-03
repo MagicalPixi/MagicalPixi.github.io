@@ -143,8 +143,9 @@ li {
   flex-wrap: wrap;
   width: 100%;
 }
-.content div {
-  margin: 5px;
+.content > div {
+  margin: 0;
+  padding: 15px;
 }
 .content .want {
   width: 100%;
@@ -152,11 +153,11 @@ li {
 .content .want img {
   width: 100%;
 }
-.content .want .want_content {
-  width: 100%;
-}
 .content .want .want_content .want_title {
   font-size: 20px;
+}
+.content .want .want_content .want_descrition {
+  font-size: 14px;
 }
 body,
 h1,
@@ -167,19 +168,25 @@ li {
 }
 @media screen and (min-width: 700px) {
   .content {
+    padding: 0 0 15px 0;
     display: flex;
     display: -webkit-flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
   }
-  .content div {
-    margin: 5px;
-  }
   .content .want {
-    width: 48%;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 0 0 15px 0;
   }
   .content .want img {
     width: 100%;
+  }
+  .content .want:nth-child(2n-1) {
+    padding-right: 15px;
+  }
+  .content .want:nth-child(2n) {
+    padding-left: 15px;
   }
 }
