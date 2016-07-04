@@ -136,6 +136,59 @@ li {
     margin-top: 40px;
   }
 }
+footer.msg > p {
+  background-color: #111;
+  padding-top: 5px;
+  line-height: 1;
+  color: #ffffff;
+}
+footer.msg > p span {
+  box-sizing: border-box;
+  width: 45%;
+  font-size: 12px;
+  display: inline-block;
+}
+footer.msg > p span a {
+  color: #ffffff;
+  font-size: 12px;
+  text-decoration: underline;
+}
+footer.msg > p span:nth-child(2n-1) {
+  padding-right: 2%;
+  text-align: right;
+}
+footer.msg > p span:nth-child(2n) {
+  padding-left: 2%;
+  text-align: left;
+}
+footer.msg > p:last-child {
+  padding-bottom: 10px;
+}
+@media screen and (min-width: 600px) {
+  footer.msg {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  }
+  footer.msg p {
+    padding-bottom: 10px;
+    width: 50%;
+  }
+  footer.msg p span {
+    width: auto;
+    padding: 0 10px;
+  }
+  footer.msg p.us {
+    float: left;
+  }
+  footer.msg p.basic {
+    text-align: right;
+    float: right;
+  }
+  footer.msg p.basic span {
+    text-align: right;
+  }
+}
 .content {
   background-color: #f5f5f5;
   width: 100%;

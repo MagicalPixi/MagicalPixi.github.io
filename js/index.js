@@ -1,5 +1,8 @@
 require('weui/dist/style/weui.min.css')
 require('../css/nav.less')
+require('../css/nav.pc.less')
+require('../css/footer.less')
+require('../css/footer.pc.less')
 require('../css/index.less')
 require('../css/index.pc.less')
 
