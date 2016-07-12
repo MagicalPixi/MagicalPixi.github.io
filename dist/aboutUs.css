@@ -1,0 +1,300 @@
+body,
+h1,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+h2,
+h3,
+p {
+  margin: 0;
+}
+body {
+  font-family: Microsoft YaHei;
+}
+li {
+  list-style: none;
+}
+@font-face {
+  font-family: 'title';
+  src: url(/fonts/artTitle.ttf);
+}
+header.top {
+  height: 60px;
+  position: relative;
+  z-index: 10;
+}
+header.top h1 {
+  margin: 5px 0 0 10px;
+  height: 100%;
+  color: #333;
+  font-size: 18px;
+  font-family: 'title';
+  float: left;
+}
+header.top h1 img {
+  height: 30px;
+  vertical-align: middle;
+  display: inline-block;
+}
+header.top h1 span {
+  height: 50px;
+  line-height: 55px;
+  vertical-align: middle;
+  display: inline-block;
+}
+header.top nav {
+  background-image: url(/images/list-icon.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 12.5px;
+  width: 30px;
+  height: 30px;
+  float: right;
+  display: inline-block;
+}
+header.top nav ul {
+  width: 100%;
+  font-size: 16px;
+  color: #333;
+  position: absolute;
+  top: 60px;
+  left: 0;
+}
+header.top nav ul li {
+  background-color: #fff;
+  padding: 0;
+  height: 0;
+  line-height: 1;
+  overflow: hidden;
+  transition: all 0.3s;
+  z-index: 10;
+}
+header.top nav ul li a {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 10px;
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+header.top nav ul.show li {
+  height: 2em;
+}
+body,
+h1,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+@media screen and (min-width: 600px) {
+  #wrapper {
+    display: flex;
+  }
+  #wrapper header.top {
+    padding: 30px;
+    height: auto;
+  }
+  #wrapper header.top .b {
+    display: none;
+  }
+  #wrapper header.top .title {
+    float: left;
+  }
+  #wrapper header.top h1 {
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    font-size: 24px;
+  }
+  #wrapper header.top h1 span {
+    float: left;
+  }
+  #wrapper header.top nav {
+    background: none;
+    height: 0;
+  }
+  #wrapper header.top nav ul {
+    width: auto;
+    top: 60px;
+    left: 30px;
+    right: 30px;
+  }
+  #wrapper header.top nav li {
+    margin: 20px 0;
+    padding: 0;
+    height: 1.5em;
+    line-height: 1.5em;
+    text-align: left;
+  }
+  #wrapper header.top nav li > a {
+    padding: 0;
+  }
+  #wrapper header.top nav li:first-child {
+    margin-top: 40px;
+  }
+}
+footer.msg > p {
+  background-color: #111;
+  padding-top: 5px;
+  line-height: 1;
+  color: #ffffff;
+}
+footer.msg > p span {
+  box-sizing: border-box;
+  font-size: 12px;
+  display: inline-block;
+}
+footer.msg > p span a {
+  color: #ffffff;
+  font-size: 12px;
+  text-decoration: underline;
+}
+footer.msg > p span:nth-child(2n-1) {
+  width: 55%;
+  padding-left: 15px;
+  text-align: left;
+}
+footer.msg > p span:nth-child(2n) {
+  text-align: left;
+}
+footer.msg > p:last-child {
+  padding-bottom: 10px;
+}
+@media screen and (min-width: 600px) {
+  footer.msg {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+  }
+  footer.msg p {
+    padding-bottom: 10px;
+    width: 50%;
+  }
+  footer.msg p span {
+    width: 100%;
+    padding: 0 15px;
+    white-space: nowrap;
+  }
+  footer.msg p.basic span {
+    width: 100%;
+    text-align: right;
+  }
+}
+.content {
+  flex: 1;
+}
+.content .top-bg {
+  background-image: url(/images/banner-contact.png);
+  background-size: auto 100%;
+  width: 100%;
+  height: 100px;
+}
+.content > img {
+  width: 100%;
+  max-height: 100px;
+}
+.content > section {
+  padding: 15px;
+}
+.content > section h3 i {
+  font-size: 12px;
+}
+.content > section .description {
+  margin: 10px 0;
+}
+.content > section .description:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+.content > section .description li {
+  box-sizing: border-box;
+  width: 25%;
+  height: 100px;
+  text-align: center;
+  float: left;
+  position: relative;
+}
+.content > section .description li > img {
+  width: 80%;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.content > section .description li > p {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.content > section .description .sub {
+  width: 12.5%;
+}
+.content > section .description .sub > img {
+  width: 25%;
+}
+.content > section .members > ul {
+  padding: 10px 10px 10px 0;
+}
+.content > section .members > ul li {
+  margin-bottom: 20px;
+  display: flex;
+}
+.content > section .members > ul li .avatar-box {
+  width: 25%;
+  text-align: center;
+  position: relative;
+}
+.content > section .members > ul li .avatar-box img {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.content > section .members > ul li .prop {
+  margin: 10px;
+  flex: 1;
+}
+.content > section .members > ul li .prop .desc {
+  margin-top: 10px;
+  font-size: 12px;
+}
+.content > section .members > ul li:last-child {
+  margin-bottom: 0;
+}
+.content > section .contact-us {
+  margin: 10px 20px;
+}
+.content > section .contact-us .line {
+  height: 25px;
+  line-height: 25px;
+}
+.content > section .contact-us .line .pre-icon {
+  width: 25px;
+  vertical-align: middle;
+}
+@media screen and (min-width: 600px) {
+  #wrapper .content > section .description {
+    margin-top: 20px;
+  }
+  #wrapper .content > section .description li {
+    width: 80px;
+    text-align: center;
+    float: left;
+  }
+  #wrapper .content > section .members > ul {
+    margin-top: 20px;
+    padding: 0;
+  }
+  #wrapper .content > section .members > ul li .avatar-box {
+    width: 100px;
+  }
+}
